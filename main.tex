@@ -1,0 +1,114 @@
+\documentclass[a4paper, 11pt]{report}
+
+%% Language and font encodings
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage{amsmath, amssymb}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{hyperref}
+%\usepackage{bookmark}
+\definecolor{miColor}{RGB}{220, 220, 220}
+\setlength{\marginparwidth}{2cm}
+
+% Doble espaciado para LaTeX
+\usepackage{setspace}
+\doublespacing
+
+%%Configuracion para encabezados y pie de pagina. 
+
+
+%% Configuración para citas en LaTeX 
+\usepackage{apacite}
+
+
+%% Configuración de la sangria de 1.27 cm 
+\usepackage{indentfirst}
+\setlength{\parindent}{1.27cm}
+
+% Paquete para personalizar los títulos
+\usepackage{titlesec}
+%-----------------------t-----------------------------------------------------------------------
+\titleformat{\chapter}[block]{\centering\normalfont\large\bfseries}{\thechapter.}{0.6em}{}
+\titlespacing*{\chapter}{0em}{*3}{*2}
+\titleformat{\section}[block]{\normalfont\bfseries}{\thesection}{0.6em}{}
+\titlespacing*{\section}{0em}{*2}{*1.2}
+\titleformat{\subsection}[block]{\normalfont\bfseries\itshape}{\thesubsection}{0.6em}{}
+\titlespacing*{\subsection}{0em}{*1}{*0.6}
+%-----------------------------------------------------------------------------------------------
+
+% Configuración del nivel 4 (subsubsection)
+
+\titleformat{\subsubsection}[block]
+    {\normalfont\bfseries}
+    {\thesubsubsection} % Punto después del número
+    {0.6em}
+    {}
+\titlespacing*{\subsubsection}{1.27cm}{*1}{*0.5}
+
+% Configuración del nivel 5 (paragraph)
+\titleformat{\paragraph}[block]
+    {\normalfont\bfseries\itshape}
+    {\theparagraph} % Punto después del número
+    {0.6em}
+    {}
+\titlespacing*{\paragraph}{1.27cm}{*1}{*0.5}
+
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+%%Configuración de Margenes
+\usepackage[top=2.54cm,bottom=2.54cm,left=2.54cm,right=2.54cm]{geometry}
+
+%% Useful packages
+
+\title{Derivada de una Función Trigonométrica y Logarítmica}
+\author{Huanaco Guevara, Anderson}
+
+
+\begin{document}
+
+%----------portada--------
+\input{portada/portada.tex}
+\newpage
+%------Índice-----
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}\pagenumbering{arabic}
+
+\chapter{Introducción}
+\lipsum[1-2]
+
+\section{Marco Teórico}
+
+\lipsum[1-2]
+\subsection{Hola Como Estas}
+\lipsum[1-2]
+
+\subsubsection{Hola Como Estas.}
+\lipsum[1-2]
+
+\paragraph{Hola Como Estas.}
+\lipsum[1-2]
+
+
+Hola esta es una seccion agregada usando git hub desde la terminal de arch linux
+
+Insertar referencias en \LaTeX es sencillo. \cite{castrillon2014mecanica}
+
+
+
+\bibliographystyle{apacite}
+\bibliography{referencias.bib}
+
+
+\end{document}
